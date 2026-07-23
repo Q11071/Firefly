@@ -1,25 +1,17 @@
 ---
 title: Markdown 扩展功能
-published: 1970-01-01
-updated: 1970-01-01
+published: 2026-07-23
+updated: 2026-07-23
 description: "了解 Firefly 中的 Markdown 功能"
 image: ""
 tags: [演示, 示例, Markdown, Firefly]
-category: "文章示例"
+category: "博客指南"
 slug: markdown-extended
 ---
 
 ## GitHub 仓库卡片
 
-您可以添加链接到 GitHub 仓库的动态卡片，在页面加载时，仓库信息会从 GitHub API 获取。
-
-::github{repo="CuteLeaf/Firefly"}
-
-使用代码 `::github{repo="CuteLeaf/Firefly"}` 创建 GitHub 仓库卡片。
-
-```markdown
-::github{repo="CuteLeaf/Firefly"}
-```
+仓库卡片适合补充与正文直接相关的项目来源。发布前请确认仓库地址公开、可访问。
 
 ## 提醒框(Admonitions)配置
 

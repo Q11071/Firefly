@@ -203,7 +203,7 @@ if (!isDynamic) {
 const activeTab = tabs[0]?.id || "anime";
 ---
 
-<MainGridLayout title={i18n(I18nKey.bangumi)} description={i18n(I18nKey.bangumiSubtitle)}>
+<MainGridLayout title={i18n(I18nKey.bangumi)} description="番组计划尚未开始记录。">
   <div class="flex w-full rounded-(--radius-large) overflow-hidden relative min-h-32">
     <div class="card-base z-10 px-9 py-6 relative w-full">
         <!-- 页面标题 -->
@@ -236,10 +236,10 @@ const activeTab = tabs[0]?.id || "anime";
                 <Icon is:inline name="material-symbols:settings" class="text-[2rem] text-(--btn-content)" />
               </div>
               <h2 class="text-xl font-semibold text-black/80 dark:text-white/80 mb-3">
-                未配置 Bangumi 用户ID
+				番组计划尚未开始记录
               </h2>
               <p class="text-black/60 dark:text-white/60 mb-4 max-w-md mx-auto">
-                请在 src/config/siteConfig.ts 中配置你的 Bangumi 用户ID
+				新的记录会在这里逐步整理。
               </p>
             </div>
           ) : (
@@ -281,10 +281,10 @@ const activeTab = tabs[0]?.id || "anime";
             <Icon is:inline name="material-symbols:settings" class="text-[2rem] text-(--btn-content)" />
           </div>
           <h2 class="text-xl font-semibold text-black/80 dark:text-white/80 mb-3">
-            {isUserIdConfigured ? i18n(I18nKey.bangumiEmpty) : "未配置 Bangumi 用户ID"}
+			{isUserIdConfigured ? i18n(I18nKey.bangumiEmpty) : "番组计划尚未开始记录"}
           </h2>
           <p class="text-black/60 dark:text-white/60 mb-4 max-w-md mx-auto">
-            {isUserIdConfigured ? i18n(I18nKey.bangumiEmptyReason) : "请在 src/config/siteConfig.ts 中配置你的 Bangumi 用户ID"}
+			{isUserIdConfigured ? i18n(I18nKey.bangumiEmptyReason) : "新的记录会在这里逐步整理。"}
           </p>
         </div>
       )}

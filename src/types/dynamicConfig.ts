@@ -1,6 +1,7 @@
 export type DynamicConfig = {
 	title?: string;
 	description?: string;
+	emptyText?: string;
 	showComment?: boolean;
 	itemsPerPage?: number;
 	// 动态数据 json 地址，本地默认 "/api/dynamic.json"

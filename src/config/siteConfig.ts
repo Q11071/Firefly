@@ -6,33 +6,31 @@ const SITE_LANG = "zh_CN";
 
 export const siteConfig: SiteConfig = {
 	// 站点标题
-	title: "NovaTrail 个人博客",
+	title: "NovaTrail",
 
 	// 站点副标题
-	subtitle: "NT",
+	subtitle: "NovaTrail",
 
 	// 站点 URL
-	site_url: "https://firefly.cuteleaf.cn",
+	site_url: "https://novatrailx.qzz.io/",
 
 	// 站点描述
 	description:
-		"这是我的第一个博客网站",
+		"记录技术、思考与沿途风景。",
 
 	// 站点关键词
 	keywords: [
 		"NovaTrail",
-		"Fuwari",
-		"Astro",
-		"ACGN",
 		"博客",
-		"技术博客",
-		"静态博客",
+		"技术",
+		"思考",
+		"指南",
 	],
 
 	// 主题色
 	themeColor: {
 		// 主题色的默认色相，范围从 0 到 360。例如：红色：0，青色：200，蓝绿色：250，粉色：345
-		hue: 165,
+		hue: 198,
 		// 默认模式："light" 亮色，"dark" 暗色，"system" 跟随系统
 		defaultMode: "system",
 	},
@@ -73,8 +71,8 @@ export const siteConfig: SiteConfig = {
 		// 4. 网络图片: { type: "url", value: "https://example.com/logo.png", alt: "Logo" }
 		logo: {
 			type: "image",
-			value: "assets/images/firefly.png",
-			alt: "🍀",
+			value: "/assets/images/novatrail-avatar.svg",
+			alt: "NovaTrail",
 		},
 		// 导航栏标题
 		title: "NovaTrail",
@@ -100,9 +98,9 @@ export const siteConfig: SiteConfig = {
 		// 友链页面开关
 		friends: true,
 		// 打赏页面开关
-		sponsor: true,
+		sponsor: false,
 		// 留言板页面开关，需要配置评论系统
-		guestbook: true,
+		guestbook: false,
 		// 番组计划页面开关，含追番、游戏、书籍和音乐
 		bangumi: true,
 		// 相册页面开关
@@ -190,7 +188,7 @@ export const siteConfig: SiteConfig = {
 	// bangumi配置
 	bangumi: {
 		// Bangumi用户ID
-		userId: "1143164",
+		userId: "",
 		// 数据模式：static=构建时获取，dynamic=客户端实时获取
 		// static 模式在构建时获取数据并静态渲染，部署后数据不更新
 		// dynamic 模式在浏览器中实时请求 API，始终显示最新数据
@@ -204,9 +202,13 @@ export const siteConfig: SiteConfig = {
 		// 未列出的类型将按默认顺序排在后面
 		categoryOrder: ["anime", "book", "music", "game"],
 		// 控制各分类的启用状态（true/false），未指定的分类默认启用
-		// categories: {
-		// 	game: false, // 禁用游戏分类显示
-		// },
+		categories: {
+			book: false,
+			anime: false,
+			music: false,
+			game: false,
+			real: false,
+		},
 	},
 
 	// 追番配置（Bilibili + TMDB）
@@ -214,7 +216,7 @@ export const siteConfig: SiteConfig = {
 		// Bilibili 配置
 		bilibili: {
 			// 你的 Bilibili 用户 UID
-			uid: "38932988",
+			uid: "",
 		},
 		// TMDB 配置（可选，需要翻墙）
 		// tmdb: {

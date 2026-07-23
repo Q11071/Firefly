@@ -13,7 +13,7 @@ if (!siteConfig.pages.gallery) {
 }
 
 const title = i18n(I18nKey.gallery);
-const description = i18n(I18nKey.galleryDescription);
+const description = "新的沿途风景会在这里出现。";
 
 // 构建相册数据（扫描照片、获取封面）
 const albums = galleryConfig.albums.map((album) => {
@@ -114,7 +114,8 @@ const allTags = [...new Set(albums.flatMap((a) => a.tags || []))].sort();
       ) : (
         <div class="flex flex-col items-center justify-center py-16 text-neutral-400 dark:text-neutral-500">
           <Icon is:inline name="material-symbols:photo-library" class="text-6xl mb-4 opacity-50" />
-          <p class="text-lg">{i18n(I18nKey.galleryNoAlbums)}</p>
+			<p class="text-lg">相册正在整理中，敬请期待。</p>
+			<p class="mt-2 text-sm">新的沿途风景会在这里出现。</p>
         </div>
       )}
     </div>

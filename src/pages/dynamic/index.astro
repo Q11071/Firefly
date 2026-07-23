@@ -73,7 +73,7 @@ const memos = dynamicConfig.memos;
 				source={dataUrl}
 				{itemsPerPage}
 				showComments={showInlineComments}
-				emptyText={i18n(I18nKey.dynamicEmpty)}
+				emptyText={dynamicConfig.emptyText || i18n(I18nKey.dynamicEmpty)}
 				noResultsText={i18n(I18nKey.dynamicNoResults)}
 				loadingText={i18n(I18nKey.dynamicLoading)}
 				allYearsText={i18n(I18nKey.dynamicAllYears)}

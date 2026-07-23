@@ -1,15 +1,15 @@
 ---
-title: 草稿示例
-published: 1970-01-01
-tags: [Markdown, 博客, 演示]
-category: 文章示例
-draft: true
+title: 写作草稿指南
+published: 2026-07-23
+description: 如何在 NovaTrail 中准备和发布一篇文章。
+tags: [博客, 写作, 指南]
+category: 博客指南
 slug: draft
 ---
 
-# 这篇文章是草稿
+# 写作草稿指南
 
-这篇文章目前处于草稿状态，尚未发布。因此，它不会对普通读者可见。内容仍在进行中，可能需要进一步编辑和审查。
+草稿用于整理尚未完成的想法。发布前请检查标题、摘要、分类、日期和链接，再移除 Frontmatter 中的 `draft: true`。
 
 当文章准备发布时，您可以在 Frontmatter 中将 "draft" 字段更新为 "false"：
 

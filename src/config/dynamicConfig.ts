@@ -2,19 +2,22 @@ import type { DynamicConfig } from "@/types/dynamicConfig";
 
 export const dynamicConfig: DynamicConfig = {
 	// 页面标题，如果留空则使用 i18n 中的翻译
-	title: "",
+	title: "动态",
 
 	// 页面描述文本，如果留空则使用 i18n 中的翻译
-	description: "",
+	description: "这里会陆续记录新的想法与片段。",
+
+	// 没有动态时显示的提示
+	emptyText: "尚未发布动态，欢迎稍后再来。",
 
 	// 是否为每条动态启用评论，需要先在 commentConfig.ts 启用评论系统
-	showComment: true,
+	showComment: false,
 
 	// 每页显示的动态数量
 	itemsPerPage: 20,
 
 	// 动态数据 json 地址，本地默认 "/api/dynamic.json"
-	// 可改为第三方接口地址，如 "https://firefly.cuteleaf.cn/api/dynamic.json"
+	// 可改为第三方接口地址
 	// 数据结构可打开上方链接地址参考
 	// 当 memos.enable 为 true 时，此配置会被忽略
 	apiUrl: "/api/dynamic.json",
@@ -27,9 +30,9 @@ export const dynamicConfig: DynamicConfig = {
 		enable: false,
 
 		// Memos 实例地址
-		apiUrl: "https://memos.example.com",
+		apiUrl: "",
 
 		// Memos 用户标识，如 "users/你的memos用户名"，用于过滤指定用户的动态
-		parent: "users/xiaye",
+		parent: "",
 	},
 };
